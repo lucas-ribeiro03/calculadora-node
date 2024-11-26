@@ -17,6 +17,14 @@ exports.salvarConta = async(req, res) => {
     }
 }
 
+exports.historico = async(req, res) => {
+    try{
+        const contas = await CalcModel.find().sort({feitoEm: -1})
+    } catch(e){
+        console.log(e);
+    }
+}
+
 const CalcModel = require('../models/CalcModel');
 const math = require('mathjs');
 
