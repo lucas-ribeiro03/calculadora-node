@@ -34,7 +34,12 @@ h1{
     width: 75px;
     padding: 5px;
     font-size: 25px;
+    transition: all ease 0.2s;
     cursor: pointer;
+}
+
+.btn-num:hover, .btn-del:hover, .btn-delete:hover, .btn-eq:hover{
+    background-color: rgba(20, 10, 30, 0.8);
 }
 
 .resultado{
@@ -45,4 +50,30 @@ h1{
     height: 6%;
     font-size: 20px;
     padding: 0 20px 0 10px;
+    transition: all ease-in 0.3s;
+    outline: none;
+}
+
+.btn-historico{
+    position: relative;
+    height: 45px;
+    width: 16%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    top: 25px;
+    cursor: pointer;
+    transition: all ease-in 0.1s;
+}
+
+.btn-historico:hover{
+    box-shadow: 2px 2px 12px 0;
+}
+
+.img-seta{
+    height: 18px;
+    position: relative;
+    top: 0;
+    right: -30px;
 }
