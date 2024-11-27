@@ -19,7 +19,8 @@ exports.salvarConta = async(req, res) => {
 
 exports.historico = async(req, res) => {
     try{
-        const contas = await CalcModel.find().sort({feitoEm: -1})
+        const contas = await CalcModel.find().sort({feitoEm: -1});
+        res.status(200).json(contas);
     } catch(e){
         console.log(e);
     }
